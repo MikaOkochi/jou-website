@@ -1,0 +1,31 @@
+.hero {
+    height: 75vh;
+    /* 背景画像に暗めのフィルターを重ねる（0.4の部分を大きくするとより暗くなります） */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=2000') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff !important; /* 強制的に白にする */
+}
+
+.hero h1 { 
+    font-family: var(--font-jp);
+    font-size: 42px; 
+    letter-spacing: 0.4em; 
+    font-weight: 500; 
+    margin: 0 0 15px 0;
+    color: #ffffff !important;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5); /* 影を強くして文字を浮き立たせる */
+}
+
+.hero p {
+    font-family: var(--font-en);
+    font-size: 22px;
+    letter-spacing: 0.5em;
+    color: #ffffff !important;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
