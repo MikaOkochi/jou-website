@@ -40,7 +40,6 @@
 
         nav a { text-decoration: none; color: var(--primary-color); margin-left: 30px; font-size: 13px; font-family: var(--font-en); }
 
-        /* --- HERO: imagesフォルダ経由に変更 --- */
         .hero {
             height: 65vh; margin-top: 65px;
             background-color: #cccccc;
@@ -67,7 +66,8 @@
         .service-img {
             width: 280px; height: 280px; border: 1px solid #eee;
             background-position: center; background-size: cover;
-            background-image: url('images/チップ集合.png'), url('https://via.placeholder.com/300x300?text=Nail+Tips');
+            /* imagesフォルダ内のファイル名に合わせて修正 */
+            background-image: url('images/チップ集合.png'); 
             background-color: #f0f0f0;
         }
 
@@ -82,27 +82,15 @@
         .company-table th, .company-table td { padding: 15px 10px; border-bottom: 1px solid #eee; text-align: left; font-size: 14px; }
         .company-table th { width: 140px; color: #999; }
 
-        .access-flex { display: flex; gap: 30px; align-items: flex-start; margin-bottom: 20px; }
-        .access-img {
-            width: 300px; height: 200px; border: 1px solid #eee; position: relative;
-            background-position: center; background-size: cover;
-            background-image: url('images/DSC_4791.png'), url('https://via.placeholder.com/300x200?text=Salon+Interior');
-            background-color: #f0f0f0;
-        }
-        .access-img::after {
-            content: "SALON INTERIOR"; position: absolute; bottom: 10px; left: 10px; 
-            color: #fff; font-size: 9px; letter-spacing: 0.1em; background: rgba(0,0,0,0.3); padding: 2px 8px;
-        }
-
-        .map-container { width: 100%; height: 350px; border: 1px solid #eee; }
+        .map-container { width: 100%; height: 450px; border: 1px solid #eee; background-color: #f0f0f0; }
 
         input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; background: #fafafa; box-sizing: border-box; font-size: 14px; outline: none; }
 
         footer { text-align: center; padding: 40px 20px; font-size: 10px; color: #bbb; font-family: var(--font-en); }
 
         @media (max-width: 768px) {
-            .service-container, .access-flex { flex-direction: column-reverse; }
-            .service-img, .access-img { width: 100%; height: 250px; }
+            .service-container { flex-direction: column-reverse; }
+            .service-img { width: 100%; height: 250px; }
         }
     </style>
 </head>
@@ -141,7 +129,7 @@
                ご希望のデザインを一つひとつ丁寧に形にします。</p>
             <a href="https://beauty.hotpepper.jp/kr/slnH000772068/" class="btn" target="_blank">VIEW SALON</a>
         </div>
-        <div class="service-img" style="background-image: url('images/チップ集合.png');"></div>
+        <div class="service-img"></div>
     </div>
     
     <div class="service-card" style="margin-top: 40px;">
@@ -152,19 +140,18 @@
 
 <section id="access" class="fade-in">
     <h2>ACCESS <span>アクセス</span></h2>
-    <div class="access-flex">
-        <div class="access-img" style="background-image: url('images/DSC_4785.png');"></div>
-        <div style="flex:1;">
-            <table class="company-table">
-                <tr><th>ADDRESS</th><td>〒110-0005 東京都台東区上野3-18-6 GBビル3階</td></tr>
-                <tr><th>STATION</th><td>JR「御徒町駅」徒歩2分 / メトロ「上野広小路駅」徒歩3分</td></tr>
-            </table>
-        </div>
+    <div style="margin-bottom: 30px;">
+        <table class="company-table">
+            <tr><th>COMPANY</th><td>株式会社壌</td></tr>
+            <tr><th>ADDRESS</th><td>〒110-0005 東京都台東区上野3-18-6 GBビル3階</td></tr>
+            <tr><th>STATION</th><td>JR山手線「御徒町駅」南口 徒歩2分<br>メトロ銀座線「上野広小路駅」徒歩3分</td></tr>
+        </table>
     </div>
+    
     <div class="map-container">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.038481488219!2d139.7730999!3d35.7056082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea9cb801459%3A0xc665b6f000b9576c!2zR0Ljg5Pjg6s!5e0!3m2!1sja!2sjp!4v1713171052000!5m2!1sja!2sjp" 
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.542284347781!2d139.77161827641263!3d35.70551107257973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e9f24419985%3A0x6d90787e9154f2a3!2zR0Ljg5Pjg6s!5e0!3m2!1sja!2sjp!4v1713169800000!5m2!1sja!2sjp" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
 </section>

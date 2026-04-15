@@ -1,6 +1,6 @@
 .hero {
     height: 75vh;
-    /* 背景画像に暗めのフィルターを重ねる（0.4の部分を大きくするとより暗くなります） */
+    /* 背景画像に暗めのフィルターを重ねる */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=2000') center/cover;
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff !important; /* 強制的に白にする */
+    color: #ffffff !important;
 }
 
 .hero h1 { 
@@ -18,7 +18,7 @@
     font-weight: 500; 
     margin: 0 0 15px 0;
     color: #ffffff !important;
-    text-shadow: 0 2px 15px rgba(0,0,0,0.5); /* 影を強くして文字を浮き立たせる */
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5);
 }
 
 .hero p {
@@ -36,7 +36,6 @@
     border: 1px solid #eee;
     background-position: center; 
     background-size: cover;
-    /* ここを書き換え */
     background-image: url('images/DSC_4785.png'); 
     background-color: #f9f9f9;
 }
@@ -47,7 +46,7 @@
     border: 1px solid #eee;
     background-position: center; 
     background-size: cover;
-    /* imagesフォルダ内の「チップ集合.png」を指定 */
-    background-image: url('images/チップ集合.png'); 
+    /* 修正箇所：' と ; を追加 */
+    background-image: url('images/nail_tips.png'); 
     background-color: #f0f0f0;
 }
