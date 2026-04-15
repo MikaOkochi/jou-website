@@ -29,3 +29,25 @@
     margin: 0;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
+
+.access-img {
+    width: 300px; 
+    height: 200px; 
+    border: 1px solid #eee;
+    background-position: center; 
+    background-size: cover;
+    /* ここを書き換え */
+    background-image: url('images/DSC_4785.png'); 
+    background-color: #f9f9f9;
+}
+
+.service-img {
+    width: 280px; 
+    height: 280px; 
+    border: 1px solid #eee;
+    background-position: center; 
+    background-size: cover;
+    /* imagesフォルダ内の「チップ集合.png」を指定 */
+    background-image: url('images/チップ集合.png'); 
+    background-color: #f0f0f0;
+}
