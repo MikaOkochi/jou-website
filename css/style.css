@@ -1,52 +1,35 @@
-.hero {
-    height: 75vh;
-    /* 背景画像に暗めのフィルターを重ねる */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=2000') center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff !important;
+/* モバイル対応の調整 */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 3%; /* ヘッダーの左右余白を少し詰める */
+    }
+    .logo-placeholder {
+        width: 100px; /* 少し小さく */
+        font-size: 9px;
+    }
+    nav a {
+        margin-left: 10px; /* メニューの間隔を狭めて1行に収める */
+        font-size: 10px;
+    }
+    section {
+        padding: 60px 20px; /* セクション上下の余白をスマホ用に最適化 */
+    }
+    .service-container {
+        display: flex;
+        flex-direction: column; /* スマホでは縦並びに */
+    }
+    .service-img {
+        width: 100% !important; /* 横幅いっぱい */
+        height: auto;
+        aspect-ratio: 1 / 1; /* 正方形を維持 */
+        margin-bottom: 20px;
+    }
+    .hero h1 {
+        font-size: 28px; /* スマホで文字がはみ出さないサイズ */
+    }
 }
 
-.hero h1 { 
-    font-family: var(--font-jp);
-    font-size: 42px; 
-    letter-spacing: 0.4em; 
-    font-weight: 500; 
-    margin: 0 0 15px 0;
-    color: #ffffff !important;
-    text-shadow: 0 2px 15px rgba(0,0,0,0.5);
-}
-
-.hero p {
-    font-family: var(--font-en);
-    font-size: 22px;
-    letter-spacing: 0.5em;
-    color: #ffffff !important;
-    margin: 0;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-}
-
-.access-img {
-    width: 300px; 
-    height: 200px; 
-    border: 1px solid #eee;
-    background-position: center; 
-    background-size: cover;
-    background-image: url('images/DSC_4785.png'); 
-    background-color: #f9f9f9;
-}
-
-.service-img {
-    width: 280px; 
-    height: 280px; 
-    border: 1px solid #eee;
-    background-position: center; 
-    background-size: cover;
-    /* 修正箇所：' と ; を追加 */
-    background-image: url('images/nail_tips.png'); 
-    background-color: #f0f0f0;
+/* 共通の調整：画像の角を少し丸くすると今っぽくなります */
+.service-img, .access-img {
+    border-radius: 4px;
 }
