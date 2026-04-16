@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送信完了 | 株式会社壌 | JOU Inc.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Noto+Sans+JP:wght@300;400&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #b5a691; 
+            --bg-color: #fcfcfc;
+            --font-en: 'Cormorant Garamond', serif;
+            --font-jp: 'Noto Sans JP', sans-serif;
+            --font-mincho: 'Shippori Mincho', serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: var(--font-jp);
+            color: #444;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ヘッダーは index.html と同じスタイル */
+        header {
+            padding: 15px 5%;
+            background: #ffffff;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-text {
+            font-family: var(--font-en);
+            letter-spacing: 0.2em;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .thanks-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .thanks-card {
+            background: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 80px 40px;
+            text-align: center;
+            border: 1px solid #eee; /* 高級感を出すためにあえて影ではなく細い線 */
+        }
+
+        .thanks-card h2 {
+            font-family: var(--font-mincho);
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .thanks-card p {
+            font-size: 14px;
+            line-height: 2.2;
+            margin-bottom: 40px;
+            letter-spacing: 0.05em;
+        }
+
+        .return-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff !important;
+            text-decoration: none;
+            padding: 15px 50px;
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            transition: all 0.3s;
+            font-family: var(--font-jp);
+        }
+
+        .return-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 10px;
+            color: #bbb;
+            font-family: var(--font-en);
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="logo-text">JOU Inc.</p>
+</header>
+
+<main class="thanks-main">
+    <div class="thanks-card">
+        <h2>MESSAGE SENT</h2>
+        <p>
+            お問い合わせありがとうございます。<br>
+            メッセージは正常に送信されました。<br>
+            内容を確認の上、担当者より折り返しご連絡させていただきます。<br>
+            <span style="font-size: 12px; color: #999;">※数日経っても返信がない場合は、お手数ですが再度お問い合わせください。</span>
+        </p>
+        <a href="index.html" class="return-btn">BACK TO TOP</a>
+    </div>
+</main>
+
+<footer>
+    <p>© JOU Inc. ALL RIGHTS RESERVED.</p>
+</footer>
+
+</body>
+</html>

@@ -27,8 +27,9 @@ $success = mb_send_mail($to, $subject, $body, $headers);
 
 // --- 送信後の処理 ---
 if ($success) {
-    // 送信成功：完了ページへ飛ばすか、メッセージを表示
-    echo "<script>alert('お問い合わせありがとうございます。送信が完了しました。'); location.href='index.html';</script>";
+    // 送信成功：thanks.htmlへ移動
+    header("Location: thanks.html");
+    exit;
 } else {
     // 送信失敗
     echo "<script>alert('送信に失敗しました。お手数ですが、時間をおいて再度お試しください。'); history.back();</script>";
